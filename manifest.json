@@ -1,0 +1,18 @@
+{
+    "name": "No Signup Tiktok",
+    "version": "1.0.0",
+    "description": "Watch tiktok videos your friends send without an account",
+    "manifest_version": 3,
+    "author": "Tommy Sarni",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "No Signup Tiktok"
+    },
+    "content_scripts": [
+        {
+        "matches": ["https://www.tiktok.com/*"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+        }
+      ]
+}
